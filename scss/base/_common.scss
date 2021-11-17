@@ -1,0 +1,32 @@
+body {
+  padding-top: 80px;
+
+  background-color: var(--white-text-color);
+  color: var(--primery-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.title {
+  color: var(--title-text-color);
+}

@@ -1,0 +1,127 @@
+// =========текст Оставьте свои данные
+.modal-form__box-text {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  text-align: center;
+}
+
+// =========форма
+.modal-form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-form__form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  /* outline: none; */
+}
+.modal-form__form-field-forth {
+  margin-bottom: 0;
+}
+.modal-form__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+.modal-form__box-input {
+  /* width: 100%;  */
+  position: relative;
+}
+.modal-form__input {
+  width: 448px;
+  height: 40px;
+  padding-left: 30px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  &:focus {
+    border: 1px solid #2196f3;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+.modal-form__icon {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-form__input:focus ~ & {
+    fill: var(--primary-background-color);
+    /* когда  .modal-form__input в ховере, то все СОСЕДИ внизу него внутри div 
+(вниз на одном уровне) меняют цвет*/
+  }
+}
+
+// ==================поле Введите комментарий
+.modal-form__textarea {
+  padding: 12px 16px;
+  height: 120px;
+  resize: none;
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+// ==================поле Соглашаюсь с Условиями договора
+.modal-form__field-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.modal-form__link-contract {
+  text-decoration-line: underline;
+  color: var(--acсent-text-color);
+}
+
+//============ квадратик Я соглашаюсь с Условиями договора
+.modal-form__checkbox {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.modal-form__label-checkbox {
+  display: block;
+}
+.modal-form__icon-checkbox {
+  display: block;
+  width: 16px;
+  height: 15px;
+  margin-right: 10px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+
+  .modal-form__checkbox:checked + & {
+    background-color: var(--acсent-background-color);
+    border-color: var(--acсent-background-color);
+    background-image: url(../images/check-icon.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+}
+
+// ==================поле кнопки Отправить
+.modal-form__field-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

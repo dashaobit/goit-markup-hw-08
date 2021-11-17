@@ -1,0 +1,22 @@
+/* палитра
+основной цвет текста #757575;
+заголовки #212121;
+белый #FFFFFF;
+акцент #2196F3;
+ */
+/* основной цвет фона FFFFFF
+вторичный цвет фона серый #F5F4FA
+темный #2F303A */
+/* css var */
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --acсent-text-color: #2196f3;
+  --white-text-color: #ffffff;
+  --contact-text-color: rgba(255, 255, 255, 0.6);
+  --primary-background-color: #2196f3;
+  --acсent-background-color: #188ce8;
+  --secondary-background-color: #f5f4fa;
+  --section-background-color: #2f303a;
+  --border-color: #eeeeee;
+}

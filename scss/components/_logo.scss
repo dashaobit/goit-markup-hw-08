@@ -1,0 +1,20 @@
+.logo-link {
+  color: var(--acсent-text-color);
+  font-family: Raleway, arial;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.page-header__logo-text {
+  color: black;
+}
+
+.page-footer__container-logo {
+  flex-grow: 1;
+}
+.page-footer__logo-link {
+  display: block;
+  margin-bottom: 20px;
+}
+.page-footer__logo-text {
+  color: #ffffff;
+}
