@@ -130,11 +130,12 @@
     display: none;
   }
 }
-.contact-nav__item{
+.contact-nav__item:not(:last-child) {
   @media (max-width: 1199px) {
-    margin-bottom:not(:last-child): 10px;
+    margin-bottom: 10px;
   }
 }
+
 //==============Mobile menu, кнопка-бургер
 .burger-btn {
   padding: 0;
