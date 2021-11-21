@@ -1152,16 +1152,39 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
 .filter {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__item {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .filter__item:last-child {
   margin-right: 0;
+}
+
+.filter__item:nth-child(n + 4) {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .filter__item {
+    margin-bottom: 0;
+  }
 }
 
 .examples {
