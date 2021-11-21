@@ -10,8 +10,8 @@
 }
 /* переопределяет и/или добавляет стили для button */
 .button.primary {
-  min-width: 200px;
-  min-height: 50px;
+  width: 200px;
+  height: 50px;
   padding: 10px 32px;
   color: var(--white-text-color);
   background-color: var(--primary-background-color);
