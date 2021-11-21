@@ -37,3 +37,10 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
   line-height: 1.14;
   text-transform: uppercase;
 }
+
+//=============адаптивка
+.section-work {
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}

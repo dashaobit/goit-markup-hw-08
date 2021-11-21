@@ -834,6 +834,12 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
   text-transform: uppercase;
 }
 
+@media (max-width: 1200px) {
+  .section-work {
+    display: none;
+  }
+}
+
 .section-team {
   background-color: var(--secondary-background-color);
 }
