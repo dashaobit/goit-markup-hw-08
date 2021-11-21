@@ -135,7 +135,24 @@
     margin-bottom: 10px;
   }
 }
+.contact-nav__mail {
+  width: 14px;
+  height: 10px;
 
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+.contact-nav__tel {
+  width: 10px;
+  height: 14px;
+
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
+}
 //==============Mobile menu, кнопка-бургер
 .burger-btn {
   padding: 0;

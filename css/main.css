@@ -511,6 +511,30 @@ img {
   }
 }
 
+.contact-nav__mail {
+  width: 14px;
+  height: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-nav__mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.contact-nav__tel {
+  width: 10px;
+  height: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-nav__tel {
+    width: 10px;
+    height: 16px;
+  }
+}
+
 .burger-btn {
   padding: 0;
   background-color: transparent;
@@ -635,10 +659,22 @@ img {
   text-align: center;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/hero@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet.jpg);
     max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/hero-tablet@2x.jpg);
   }
 }
 
@@ -649,6 +685,12 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop.jpg);
     max-width: 1600px;
     height: 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/hero-decktop@2x.jpg);
   }
 }
 
@@ -671,16 +713,40 @@ img {
 
 .feature {
   display: flex;
-  /* justify-content: space-between; */
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .feature {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .feature__item {
-  width: calc((100%-90px) / 4);
-  margin-right: 30px;
+  width: calc(100% - 30px);
+  margin-bottom: 30px;
 }
 
 .feature__item:nth-child(4n) {
-  margin-right: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .feature__item {
+    width: calc((100% - 60px) / 2);
+  }
+  .feature__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .feature__icon-box {
@@ -688,7 +754,6 @@ img {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
