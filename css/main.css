@@ -81,9 +81,15 @@ img {
   margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+  }
 }
 
 .container {
@@ -127,7 +133,7 @@ img {
 .button.primary {
   width: 200px;
   height: 50px;
-  padding: 10px 32px;
+  padding: 10px 22px;
   color: var(--white-text-color);
   background-color: var(--primary-background-color);
   font-weight: 700;
@@ -842,15 +848,47 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
 
 .team {
   display: flex;
-  /* justify-content: space-between; */
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .team__item {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .team__item:last-child {
-  margin-right: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .team__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .team__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .team__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    margin-bottom: 0;
+  }
+  .team__item:nth-child(2n) {
+    margin-right: 30px;
+  }
+  .team__item:last-child {
+    margin-right: 0;
+  }
 }
 
 /* ---------div под фоткой---------- */
@@ -871,8 +909,15 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
 
 .social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .social {
+    flex-wrap: nowrap;
+  }
 }
 
 .social__item {
@@ -1065,6 +1110,7 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
 
 .page-footer__icon-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
 }
