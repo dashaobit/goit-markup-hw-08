@@ -750,7 +750,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .feature {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -761,7 +760,7 @@ img {
   margin-bottom: 30px;
 }
 
-.feature__item:nth-child(4n) {
+.feature__item:last-child {
   margin-bottom: 0;
 }
 
@@ -769,14 +768,21 @@ img {
   .feature__item {
     width: calc((100% - 60px) / 2);
   }
-  .feature__item:not(:last-child) {
+  .feature__item:nth-child(2n+1) {
     margin-right: 30px;
+  }
+  .feature__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .feature__item {
     width: calc((100% - 90px) / 4);
+    margin-bottom: 0;
+  }
+  .feature__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -1264,22 +1270,37 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
 
 .examples {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .examples {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .examples__item {
   width: 370px;
-  /* width: calc((100% - 60px) / 3); */
-  margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.examples__item:nth-child(3n) {
-  margin-right: 0;
+.examples__item:last-child {
+  margin-bottom: 0;
 }
 
-.examples__item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .examples__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .examples__item {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .examples__link {
@@ -1347,6 +1368,16 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
   border-bottom: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
   padding: 20px 24px;
+}
+
+.examples__box--extra-padding {
+  padding: 20px 24px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .examples__box--extra-padding {
+    padding-bottom: 56px;
+  }
 }
 
 .examples__title {

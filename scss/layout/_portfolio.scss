@@ -27,21 +27,32 @@
   }
 }
 
+//================ сетка
 .examples {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
+
 .examples__item {
   width: 370px;
-  /* width: calc((100% - 60px) / 3); */
-  margin-right: 30px;
   margin-bottom: 30px;
 
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-  &:nth-last-child(-n + 3) {
+  &:last-child {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 3);
   }
 }
 .examples__link {
@@ -113,6 +124,15 @@
   border-left: 1px solid var(--border-color);
   padding: 20px 24px;
 }
+
+//======== у первой карточки на планшете паддинги больше, чем у других
+.examples__box--extra-padding {
+  padding: 20px 24px;
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    padding-bottom: 56px;
+  }
+}
+
 .examples__title {
   margin-bottom: 4px;
   color: var(--title-text-color);

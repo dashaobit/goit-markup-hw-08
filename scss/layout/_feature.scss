@@ -4,7 +4,6 @@
   justify-content: center;
 
   @media screen and (min-width: 768px) {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -13,20 +12,32 @@
   width: calc(100% - 30px);
   margin-bottom: 30px;
 
-  &:nth-child(4n) {
+  //======последний:
+  &:last-child {
     margin-bottom: 0;
   }
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 60px) / 2);
 
-    &:not(:last-child) {
+    //=====нечетные:
+    &:nth-child(2n+1) {
       margin-right: 30px;
+    }
+    //=====два с конца:
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
     }
   }
 
   @media screen and (min-width: 1200px) {
     width: calc((100% - 90px) / 4);
+    margin-bottom: 0;
+
+    //=======все, кроме последнего:
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
