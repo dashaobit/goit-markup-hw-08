@@ -12,7 +12,6 @@
 
 // =========форма
 .modal-form {
-  width: 448px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -37,9 +36,10 @@
   position: relative;
 }
 .modal-form__input {
-  width: 448px;
+  width: 370px;
   height: 40px;
-  padding-left: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
@@ -48,6 +48,12 @@
     outline: none;
     border-radius: 4px;
     cursor: pointer;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+    height: 40px;
+    padding-left: 30px;
   }
 }
 .modal-form__icon {
