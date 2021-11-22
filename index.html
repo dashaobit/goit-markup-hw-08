@@ -206,31 +206,79 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="work">
             <li class="work__item">
-              <img
-                src="./images/do1.jpg"
-                alt="десктопные приложения"
-                width="370"
-              />
+              <picture>
+                <!-- картинка будет подгружаться ТОЛЬКО для десктопной версии. 
+                  Браузер выберет webp или jpg формат, 1х или 2x Retina -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/work/do1-desktop.webp    1x,
+                    ../images/work/do1-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/work/do1-desktop.jpg    1x,
+                    ../images/work/do1-desktop@2x.jpg 2x
+                  "
+                />
+                <img src="#" alt="десктопные приложения" loading='lazy' />
+              </picture>
               <div class="work__box">
                 <p class="work__text">десктопные приложения</p>
               </div>
             </li>
+
             <li class="work__item">
-              <img
-                src="./images/do2.jpg"
-                alt="мобильные приложения"
-                width="370"
-              />
+              <picture>
+                <!-- картинка будет подгружаться ТОЛЬКО для десктопной версии -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/work/do2-desktop.webp    1x,
+                    ../images/work/do2-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/work/do2-desktop.jpg    1x,
+                    ../images/work/do2-desktop@2x.jpg 2x
+                  "
+                />
+                <img src="#" alt="мобильные приложения" loading='lazy' />
+              </picture>
               <div class="work__box">
                 <p class="work__text">мобильные приложения</p>
               </div>
             </li>
+
             <li class="work__item">
-              <img
-                src="./images/do3.jpg"
-                alt="дизайнерские решения"
-                width="370"
-              />
+              <picture>
+                <!-- картинка будет подгружаться ТОЛЬКО для десктопной версии -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/work/do3-desktop.webp    1x,
+                    ../images/work/do3-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/work/do3-desktop.jpg    1x,
+                    ../images/work/do3-desktop@2x.jpg 2x
+                  "
+                />
+                <img src="#" alt="дизайнерские решения" loading='lazy' />
+              </picture>
               <div class="work__box">
                 <p class="work__text">дизайнерские решения</p>
               </div>
@@ -240,7 +288,7 @@
       </section>
 
       <!-- Наша команда -->
-      <!-- <section class="section section-team">
+      <section class="section section-team">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
@@ -410,7 +458,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Постоянные клиенты -->
       <section class="section">
@@ -643,7 +691,7 @@
         </div>
       </div>
     </footer>
-    
+
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>

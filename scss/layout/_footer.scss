@@ -81,6 +81,7 @@
 
 .page-footer__icon-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
 }
