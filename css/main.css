@@ -411,14 +411,13 @@ img {
 @media screen and (min-width: 768px) {
   .page-header {
     padding-top: 26px;
-    padding-bottom: 26px;
+    padding-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .page-header {
     padding-top: 24px;
-    padding-bottom: 25px;
   }
 }
 
@@ -484,6 +483,13 @@ img {
 
 .contact-nav__link:hover, .contact-nav__link:focus {
   color: var(--acсent-text-color);
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .contact-nav__link {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .contact-nav__item {

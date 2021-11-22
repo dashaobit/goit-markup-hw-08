@@ -11,12 +11,11 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 26px;
-    padding-bottom: 26px;
+    padding-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 24px;
-    padding-bottom: 25px;
-  }
+ }
 }
 
 .page-header__container {
@@ -81,6 +80,11 @@
   &:hover,
   &:focus {
     color: var(--acсent-text-color);
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1199px){
+    font-size: 12px;
+    line-height: 1.17;
   }
 }
 
