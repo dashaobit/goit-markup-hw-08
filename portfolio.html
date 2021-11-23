@@ -58,7 +58,7 @@
           </li>
         </ul>
 
-                <!----------- Mobile menu ---------------->
+        <!----------- Mobile menu ---------------->
         <button class="burger-btn" data-menu-open>
           <svg class="burger-btn__icon">
             <use href="./images/sprite.svg#icon-burger"></use>
@@ -133,9 +133,7 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="section__title--hidden">
-            Примеры проектов веб-студии
-          </h1>
+          <h1 class="section__title--hidden">Примеры проектов веб-студии</h1>
           <ul class="filter">
             <li class="filter__item">
               <button type="button" class="button secondary">Все</button>
@@ -158,11 +156,62 @@
             <li class="examples__item">
               <a href="/" class="examples__link">
                 <div class="examples__overlay-box">
-                  <img
-                    src="./images/tehnokrak.jpg"
-                    alt="фото первой страницы сайта"
-                    width="370"
-                  />
+                  <picture>
+                    <!-- Браузер выберет webp или jpg формат, 1х или 2x Retina -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-1-desktop.webp    1x,
+                        ../images/portfolio/works-1-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-1-desktop.jpg    1x,
+                        ../images/portfolio/works-1-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-1-tablet.webp    1x,
+                        ../images/portfolio/works-1-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-1-tablet.jpg    1x,
+                        ../images/portfolio/works-1-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-1.webp    1x,
+                        ../images/portfolio/works-1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-1.jpg    1x,
+                        ../images/portfolio/works-1@2x.jpg 2x
+                      "
+                    />
+
+                    <img src="#" alt="фото первой страницы сайта" />
+                  </picture>
+
                   <p class="examples__overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -179,11 +228,61 @@
             <li class="examples__item">
               <a href="/" class="examples__link">
                 <div class="examples__overlay-box">
-                  <img
-                    src="./images/poster.jpg"
-                    alt="фото двух баскетболистов"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-2-desktop.webp    1x,
+                        ../images/portfolio/works-2-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-2-desktop.jpg    1x,
+                        ../images/portfolio/works-2-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-2-tablet.webp    1x,
+                        ../images/portfolio/works-2-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-2-tablet.jpg    1x,
+                        ../images/portfolio/works-2-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-2.webp    1x,
+                        ../images/portfolio/works-2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-2.jpg    1x,
+                        ../images/portfolio/works-2@2x.jpg 2x
+                      "
+                    />
+
+                    <img src="#" alt="фото двух баскетболистов" />
+                  </picture>
+
                   <p class="examples__overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -202,11 +301,61 @@
             <li class="examples__item">
               <a href="/" class="examples__link">
                 <div class="examples__overlay-box">
-                  <img
-                    src="./images/restoran.jpg"
-                    alt="фото логотипа ресторана"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-3-desktop.webp    1x,
+                        ../images/portfolio/works-3-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-3-desktop.jpg    1x,
+                        ../images/portfolio/works-3-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-3-tablet.webp    1x,
+                        ../images/portfolio/works-3-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-3-tablet.jpg    1x,
+                        ../images/portfolio/works-3-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-3.webp    1x,
+                        ../images/portfolio/works-3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-3.jpg    1x,
+                        ../images/portfolio/works-3@2x.jpg 2x
+                      "
+                    />
+
+                    <img src="#" alt="фото логотипа ресторана" />
+                  </picture>
+
                   <p class="examples__overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -223,11 +372,61 @@
             <li class="examples__item">
               <a href="/" class="examples__link">
                 <div class="examples__overlay-box">
-                  <img
-                    src="./images/pr-prime.jpg"
-                    alt="фото наушников"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-4-desktop.webp    1x,
+                        ../images/portfolio/works-4-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-4-desktop.jpg    1x,
+                        ../images/portfolio/works-4-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-4-tablet.webp    1x,
+                        ../images/portfolio/works-4-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-4-tablet.jpg    1x,
+                        ../images/portfolio/works-4-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-4.webp    1x,
+                        ../images/portfolio/works-4@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-4.jpg    1x,
+                        ../images/portfolio/works-4@2x.jpg 2x
+                      "
+                    />
+
+                    <img src="#" alt="фото наушников" />
+                  </picture>
+
                   <p class="examples__overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -247,11 +446,61 @@
             <li class="examples__item">
               <a href="/" class="examples__link">
                 <div class="examples__overlay-box">
-                  <img
-                    src="./images/pr-boxes.jpg"
-                    alt="фото двух коробок"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-5-desktop.webp    1x,
+                        ../images/portfolio/works-5-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-5-desktop.jpg    1x,
+                        ../images/portfolio/works-5-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-5-tablet.webp    1x,
+                        ../images/portfolio/works-5-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-5-tablet.jpg    1x,
+                        ../images/portfolio/works-5-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-5.webp    1x,
+                        ../images/portfolio/works-5@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-5.jpg    1x,
+                        ../images/portfolio/works-5@2x.jpg 2x
+                      "
+                    />
+
+                    <img src="#" alt="фото двух коробок" />
+                  </picture>
+
                   <p class="examples__overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -268,11 +517,61 @@
             <li class="examples__item">
               <a href="/" class="examples__link">
                 <div class="examples__overlay-box">
-                  <img
-                    src="./images/inspiration.jpg"
-                    alt="фото монитора"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-6-desktop.webp    1x,
+                        ../images/portfolio/works-6-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-6-desktop.jpg    1x,
+                        ../images/portfolio/works-6-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-6-tablet.webp    1x,
+                        ../images/portfolio/works-6-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-6-tablet.jpg    1x,
+                        ../images/portfolio/works-6-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-6.webp    1x,
+                        ../images/portfolio/works-6@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-6.jpg    1x,
+                        ../images/portfolio/works-6@2x.jpg 2x
+                      "
+                    />
+
+                    <img src="#" alt="фото монитора" />
+                  </picture>
+
                   <p class="examples__overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -289,11 +588,61 @@
             <li class="examples__item">
               <a href="/" class="examples__link">
                 <div class="examples__overlay-box">
-                  <img
-                    src="./images/magazin.jpg"
-                    alt="фото раскрытой книги"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-7-desktop.webp    1x,
+                        ../images/portfolio/works-7-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-7-desktop.jpg    1x,
+                        ../images/portfolio/works-7-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-7-tablet.webp    1x,
+                        ../images/portfolio/works-7-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-7-tablet.jpg    1x,
+                        ../images/portfolio/works-7-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-7.webp    1x,
+                        ../images/portfolio/works-7@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-7.jpg    1x,
+                        ../images/portfolio/works-7@2x.jpg 2x
+                      "
+                    />
+
+                    <img src="#" alt="фото раскрытой книги" />
+                  </picture>
+
                   <p class="examples__overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -310,11 +659,61 @@
             <li class="examples__item">
               <a href="/" class="examples__link">
                 <div class="examples__overlay-box">
-                  <img
-                    src="./images/pr-lab.jpg"
-                    alt="фото логотипа"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-8-desktop.webp    1x,
+                        ../images/portfolio/works-8-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-8-desktop.jpg    1x,
+                        ../images/portfolio/works-8-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-8-tablet.webp    1x,
+                        ../images/portfolio/works-8-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-8-tablet.jpg    1x,
+                        ../images/portfolio/works-8-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-8.webp    1x,
+                        ../images/portfolio/works-8@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-8.jpg    1x,
+                        ../images/portfolio/works-8@2x.jpg 2x
+                      "
+                    />
+
+                    <img src="#" alt="фото логотипа" />
+                  </picture>
+
                   <p class="examples__overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -331,11 +730,61 @@
             <li class="examples__item">
               <a href="/" class="examples__link">
                 <div class="examples__overlay-box">
-                  <img
-                    src="./images/growing.jpg"
-                    alt="фото laptop"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-9-desktop.webp    1x,
+                        ../images/portfolio/works-9-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ../images/portfolio/works-9-desktop.jpg    1x,
+                        ../images/portfolio/works-9-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-9-tablet.webp    1x,
+                        ../images/portfolio/works-9-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/portfolio/works-9-tablet.jpg    1x,
+                        ../images/portfolio/works-9-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-9.webp    1x,
+                        ../images/portfolio/works-9@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ../images/portfolio/works-9.jpg    1x,
+                        ../images/portfolio/works-9@2x.jpg 2x
+                      "
+                    />
+
+                    <img src="#" alt="фото laptop" />
+                  </picture>
+  
                   <p class="examples__overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -447,4 +896,3 @@
     <script src="./js/menu.js"></script>
   </body>
 </html>
-
