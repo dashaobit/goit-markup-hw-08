@@ -212,8 +212,8 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ../images/work/do1-desktop.webp    1x,
-                    ../images/work/do1-desktop@2x.webp 2x
+                    ./images/work/do1-desktop.webp    1x,
+                    ./images/work/do1-desktop@2x.webp 2x
                   "
                   type="image/webp"
                 />
@@ -221,8 +221,8 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ../images/work/do1-desktop.jpg    1x,
-                    ../images/work/do1-desktop@2x.jpg 2x
+                    ./images/work/do1-desktop.jpg    1x,
+                    ./images/work/do1-desktop@2x.jpg 2x
                   "
                 />
                 <img src="#" alt="десктопные приложения" loading="lazy" />
@@ -238,8 +238,8 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ../images/work/do2-desktop.webp    1x,
-                    ../images/work/do2-desktop@2x.webp 2x
+                    ./images/work/do2-desktop.webp    1x,
+                    ./images/work/do2-desktop@2x.webp 2x
                   "
                   type="image/webp"
                 />
@@ -247,8 +247,8 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ../images/work/do2-desktop.jpg    1x,
-                    ../images/work/do2-desktop@2x.jpg 2x
+                    ./images/work/do2-desktop.jpg    1x,
+                    ./images/work/do2-desktop@2x.jpg 2x
                   "
                 />
                 <img src="#" alt="мобильные приложения" loading="lazy" />
@@ -264,8 +264,8 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ../images/work/do3-desktop.webp    1x,
-                    ../images/work/do3-desktop@2x.webp 2x
+                    ./images/work/do3-desktop.webp    1x,
+                    ./images/work/do3-desktop@2x.webp 2x
                   "
                   type="image/webp"
                 />
@@ -273,8 +273,8 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ../images/work/do3-desktop.jpg    1x,
-                    ../images/work/do3-desktop@2x.jpg 2x
+                    ./images/work/do3-desktop.jpg    1x,
+                    ./images/work/do3-desktop@2x.jpg 2x
                   "
                 />
                 <img src="#" alt="дизайнерские решения" loading="lazy" />
@@ -295,14 +295,18 @@
             <li class="team__item">
               <picture>
                 <!-- Браузер выберет webp или jpg формат, 1х или 2x Retina -->
-                <source
+                <source media="(min-width: 1200px)"
+                srcset="./images/team/team-1-desktop.webp 1x, ./images/team/team-1-desktop@2x.webp 2x" 
+                type="image/webp">
+
+                <!-- <source
                   media="(min-width: 1200px)"
                   srcset="
                     ./images/team/team-1-desktop.webp    1x,
                     ./images/team/team-1-desktop@2x.webp 2x
                   "
                   type="image/webp"
-                />
+                /> -->
 
                 <source
                   media="(min-width: 1200px)"
@@ -312,14 +316,17 @@
                   "
                 />
 
-                <source
+                <!-- <source
                   media="(min-width: 768px)"
                   srcset="
                     ./images/team/team-1-tablet.webp    1x,
                     ./images/team/team-1-tablet@2x.webp 2x
                   "
                   type="image/webp"
-                />
+                /> -->
+                <source media="(min-width: 768px)"
+                srcset="./images/team/team-1-tablet.webp 1x, ./images/team/team-1-tablet@2x.webp 2x" 
+                type="image/webp">
 
                 <source
                   media="(min-width: 768px)"
