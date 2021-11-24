@@ -20,12 +20,10 @@
 
 // =========контейнер лого+адресс
 .page-footer__container-logo {
-  margin-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     text-align: left;
-    // width: 231px;
   }
 }
 .page-footer__adress {
@@ -78,7 +76,9 @@
     text-align: left;
   }
 }
-
+.page-footer__container-icon--margin{
+  margin-top: 60px;
+}
 .page-footer__icon-list {
   display: flex;
   flex-wrap: wrap;
@@ -129,7 +129,7 @@
 }
 
 .page-footer__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -143,6 +143,10 @@
   &:focus {
     color: #ffffff;
     outline: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
   }
 
   @media screen and (min-width: 1200px) {

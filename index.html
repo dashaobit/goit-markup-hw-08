@@ -69,7 +69,7 @@
           <div class="mobile-menu__box">
             <ul class="mobile-site-nav">
               <li>
-                <a href="" class="site-nav__link mobile-site-nav__link"
+                <a href="" class="site-nav__link site-nav__link--current mobile-site-nav__link"
                   >Студия</a
                 >
               </li>
@@ -294,20 +294,46 @@
           <ul class="team">
             <li class="team__item">
               <picture>
-                <!-- Браузер выберет webp или jpg формат, 1х или 2x Retina -->
-                <source media="(min-width: 1200px)"
-                srcset="./images/team/team-1-desktop.webp 1x, ./images/team/team-1-desktop@2x.webp 2x" 
-                type="image/webp">
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-1.webp    1x,
+                    ./images/team/team-1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-1.jpg    1x,
+                    ./images/team/team-1@2x.jpg 2x
+                  "
+                />
 
-                <!-- <source
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/team/team-1-tablet.webp    1x,
+                    ./images/team/team-1-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/team/team-1-tablet.jpg    1x,
+                    ./images/team/team-1-tablet@2x.jpg 2x
+                  "
+                />
+
+                <source
                   media="(min-width: 1200px)"
                   srcset="
                     ./images/team/team-1-desktop.webp    1x,
                     ./images/team/team-1-desktop@2x.webp 2x
                   "
                   type="image/webp"
-                /> -->
-
+                />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
@@ -316,44 +342,7 @@
                   "
                 />
 
-                <!-- <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/team/team-1-tablet.webp    1x,
-                    ./images/team/team-1-tablet@2x.webp 2x
-                  "
-                  type="image/webp"
-                /> -->
-                <source media="(min-width: 768px)"
-                srcset="./images/team/team-1-tablet.webp 1x, ./images/team/team-1-tablet@2x.webp 2x" 
-                type="image/webp">
-
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/team/team-1-tablet.jpg    1x,
-                    ./images/team/team-1-tablet@2x.jpg 2x
-                  "
-                />
-
-                <source
-                  media="(min-width: 320px)"
-                  srcset="
-                    ./images/team/team-1.webp    1x,
-                    ./images/team/team-1@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-
-                <source
-                  media="(min-width: 320px)"
-                  srcset="
-                    ./images/team/team-1.jpg    1x,
-                    ./images/team/team-1@2x.jpg 2x
-                  "
-                />
-
-                <img src="#" alt="фото Игорь Демьяненко" />
+                <img src="#" alt="Игорь Демьяненко Product Designer" />
               </picture>
 
               <div class="team__box">
@@ -396,6 +385,40 @@
               <picture>
                 <!-- Браузер выберет webp или jpg формат, 1х или 2x Retina -->
                 <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-2.webp    1x,
+                    ./images/team/team-2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-2.jpg    1x,
+                    ./images/team/team-2@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/team/team-2-tablet.webp    1x,
+                    ./images/team/team-2-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/team/team-2-tablet.jpg    1x,
+                    ./images/team/team-2-tablet@2x.jpg 2x
+                  "
+                />
+
+                <source
                   media="(min-width: 1200px)"
                   srcset="
                     ./images/team/team-2-desktop.webp    1x,
@@ -412,41 +435,7 @@
                   "
                 />
 
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/team/team-2-tablet.webp    1x,
-                    ./images/team/team-2-tablet@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/team/team-2-tablet.jpg    1x,
-                    ./images/team/team-2-tablet@2x.jpg 2x
-                  "
-                />
-
-                <source
-                  media="(min-width: 320px)"
-                  srcset="
-                    ./images/team/team-2.webp    1x,
-                    ./images/team/team-2@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-
-                <source
-                  media="(min-width: 320px)"
-                  srcset="
-                    ./images/team/team-2.jpg    1x,
-                    ./images/team/team-2@2x.jpg 2x
-                  "
-                />
-
-                <img src="#" alt="фото Ольги Репиной" />
+                <img src="#" alt="Ольга Репина" />
               </picture>
 
               <div class="team__box">
@@ -489,6 +478,40 @@
               <picture>
                 <!-- Браузер выберет webp или jpg формат, 1х или 2x Retina -->
                 <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-3.webp    1x,
+                    ./images/team/team-3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-3.jpg    1x,
+                    ./images/team/team-3@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/team/team-3-tablet.webp    1x,
+                    ./images/team/team-3-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/team/team-3-tablet.jpg    1x,
+                    ./images/team/team-3-tablet@2x.jpg 2x
+                  "
+                />
+
+                <source
                   media="(min-width: 1200px)"
                   srcset="
                     ./images/team/team-3-desktop.webp    1x,
@@ -505,41 +528,7 @@
                   "
                 />
 
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/team/team-3-tablet.webp    1x,
-                    ./images/team/team-3-tablet@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/team/team-3-tablet.jpg    1x,
-                    ./images/team/team-3-tablet@2x.jpg 2x
-                  "
-                />
-
-                <source
-                  media="(min-width: 320px)"
-                  srcset="
-                    ./images/team/team-3.webp    1x,
-                    ./images/team/team-3@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-
-                <source
-                  media="(min-width: 320px)"
-                  srcset="
-                    ./images/team/team-3.jpg    1x,
-                    ./images/team/team-3@2x.jpg 2x
-                  "
-                />
-
-                <img src="#" alt="фото Николая Тарасова" />
+                <img src="#" alt="Николай Тарасов" />
               </picture>
 
               <div class="team__box">
@@ -582,6 +571,40 @@
               <picture>
                 <!-- Браузер выберет webp или jpg формат, 1х или 2x Retina -->
                 <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-4.webp    1x,
+                    ./images/team/team-4@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-4.jpg    1x,
+                    ./images/team/team-4@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/team/team-4-tablet.webp    1x,
+                    ./images/team/team-4-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/team/team-4-tablet.jpg    1x,
+                    ./images/team/team-4-tablet@2x.jpg 2x
+                  "
+                />
+
+                <source
                   media="(min-width: 1200px)"
                   srcset="
                     ./images/team/team-4-desktop.webp    1x,
@@ -597,42 +620,7 @@
                     ./images/team/team-4-desktop@2x.jpg 2x
                   "
                 />
-
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/team/team-4-tablet.webp    1x,
-                    ./images/team/team-4-tablet@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/team/team-4-tablet.jpg    1x,
-                    ./images/team/team-4-tablet@2x.jpg 2x
-                  "
-                />
-
-                <source
-                  media="(min-width: 320px)"
-                  srcset="
-                    ./images/team/team-4.webp    1x,
-                    ./images/team/team-4@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-
-                <source
-                  media="(min-width: 320px)"
-                  srcset="
-                    ./images/team/team-4.jpg    1x,
-                    ./images/team/team-4@2x.jpg 2x
-                  "
-                />
-
-                <img src="#" alt="фото Михаила Ермакова" />
+                <img src="#" alt="Михаил Ермаков" />
               </picture>
 
               <div class="team__box">
@@ -880,7 +868,7 @@
           </ul>
         </div>
 
-        <div class="page-footer__container-icon">
+        <div class="page-footer__container-icon page-footer__container-icon--margin">
           <p>подпишитесь на рассылку</p>
           <div class="page-footer__subscribe-container">
             <form class="page-footer__form" action="">
