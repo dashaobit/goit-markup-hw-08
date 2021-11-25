@@ -6,6 +6,10 @@
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and (min-width: 1200px){
+margin: 0;
   }
 }
 .feature__item {
@@ -19,25 +23,16 @@
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 60px) / 2);
-
-    //=====нечетные:
-    &:nth-child(2n + 1) {
-      margin-right: 30px;
-    }
-    //=====два с конца:
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
-  }
+    margin: 15px;
+}
 
   @media screen and (min-width: 1200px) {
     width: calc((100% - 90px) / 4);
-    margin-bottom: 0;
-
-    //=======все, кроме последнего:
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    margin: 0;
+    margin-right: 30px;
+    
+    &:last-child {
+    margin-right: 0;
   }
 }
 
@@ -87,4 +82,5 @@
   @media screen and (min-width: 768px) {
     text-align: left;
   }
+}
 }
