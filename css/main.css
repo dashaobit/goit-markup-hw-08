@@ -780,7 +780,7 @@ img {
 }
 
 .feature__item {
-  width: calc(100% - 30px);
+  width: calc(100%);
   margin-bottom: 30px;
   /* .feature-item::before {
   display: block;
