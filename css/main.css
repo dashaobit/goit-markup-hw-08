@@ -1114,6 +1114,7 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
   .page-footer__container-logo {
     margin-bottom: 0;
     margin-right: 70px;
+    text-align: left;
   }
 }
 
@@ -1249,6 +1250,18 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
 .page-footer__input:focus {
   color: #ffffff;
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__input {
+    width: 358px;
+  }
 }
 
 .page-footer__subscribe-btn {
