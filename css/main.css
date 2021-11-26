@@ -90,7 +90,7 @@ img {
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 28px;
@@ -100,6 +100,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .section__title {
+    margin-bottom: 50px;
     font-size: 36px;
   }
 }
@@ -213,8 +214,8 @@ img {
   top: 50%;
   left: 50%;
   padding: 40px;
-  min-width: 320px;
-  min-height: 609px;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--white-text-color);
   transform: translate(-50%, -50%) scale(1);
   transition: transorm 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -227,8 +228,11 @@ img {
 
 @media screen and (min-width: 450px) {
   .backdrop__box {
+    width: 0;
+    height: 0;
     min-width: 450px;
     min-height: 609px;
+    top: calc(50% + 50px);
   }
 }
 
@@ -236,13 +240,14 @@ img {
   .backdrop__box {
     max-width: 450px;
     max-height: 609px;
+    top: calc(50% + 145px);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .backdrop__box {
     min-width: 528px;
-    min-height: 581px;
+    height: 581px;
   }
 }
 
@@ -307,7 +312,7 @@ img {
 }
 
 .modal-form__input {
-  width: 370px;
+  width: 80vw;
   height: 40px;
   padding-left: 40px;
   padding-right: 40px;
@@ -320,6 +325,12 @@ img {
   outline: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-form__input {
+    width: 370px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -417,7 +428,7 @@ img {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .page-header__container {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -1044,15 +1055,9 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
 }
 
 .client__item {
-  width: calc(100% - 30px);
+  width: calc((100% - 60px) / 2);
   height: 92px;
   margin: 15px;
-}
-
-@media screen and (min-width: 480px) {
-  .client__item {
-    width: calc((100% - 60px) / 2);
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1100,14 +1105,13 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
 }
 
 .page-footer__container {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
   .page-footer__container {
+    display: flex;
     align-items: baseline;
-    flex-direction: row;
   }
 }
 
@@ -1122,10 +1126,6 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
   .page-footer__container--flex {
     align-items: baseline;
   }
-}
-
-.page-footer__container-logo {
-  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1172,13 +1172,11 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
-  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .page-footer__container-icon {
     margin-top: 0;
-    text-align: center;
   }
 }
 
@@ -1188,9 +1186,10 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
   }
 }
 
-.page-footer__container-icon--margin {
-  margin-top: 60px;
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .page-footer__container-icon--margin {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1285,7 +1284,12 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
 .page-footer__subscribe-btn {
   display: flex;
   align-items: center;
-  margin-left: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__subscribe-btn {
+    margin-left: 12px;
+  }
 }
 
 .page-footer__subscribe-icon {
@@ -1346,12 +1350,13 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
 }
 
 .examples__item {
-  width: 370px;
   margin-bottom: 30px;
 }
 
-.examples__item:last-child {
-  margin-bottom: 0;
+@media screen and (max-width: 767px) {
+  .examples__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1427,6 +1432,12 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
 .examples__link:focus .examples__overlay-text {
   transform: translateY(0);
   /* оверлей ПОСРЕДИ картинки */
+}
+
+@media screen and (max-width: 479px) {
+  .examples__overlay-text {
+    font-size: 4vw;
+  }
 }
 
 .examples__box {

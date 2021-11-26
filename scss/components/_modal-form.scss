@@ -36,7 +36,7 @@
   position: relative;
 }
 .modal-form__input {
-  width: 370px;
+  width: 80vw;
   height: 40px;
   padding-left: 40px;
   padding-right: 40px;
@@ -50,6 +50,9 @@
     cursor: pointer;
   }
 
+  @media screen and (min-width: 480px){
+    width: 370px;
+  }
   @media screen and (min-width: 1200px) {
     width: 448px;
     height: 40px;

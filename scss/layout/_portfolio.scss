@@ -40,11 +40,12 @@
 }
 
 .examples__item {
-  width: 370px;
   margin-bottom: 30px;
 
-  &:last-child {
-    margin-bottom: 0;
+  @media screen and (max-width: 767px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -57,9 +58,9 @@
 }
 .examples__link {
   // display: block;
-display: flex;
-flex-direction: column;
-height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -117,6 +118,10 @@ height: 100%;
   .examples__link:hover &,
   .examples__link:focus & {
     transform: translateY(0); /* оверлей ПОСРЕДИ картинки */
+  }
+  // текст оверлея мельче, чем на мобилках
+  @media screen and (max-width: 479px) {
+    font-size: 4vw;
   }
 }
 

@@ -810,65 +810,67 @@
     <!-- подвал -->
     <footer class="page-footer">
       <div class="container page-footer__container">
-        <div class="page-footer__container-logo">
-          <a href="/" class="logo-link page-footer__logo-link"
-            >Web<span class="page-footer__logo-text">Studio</span></a
-          >
-          <address class="page-footer__adress">
-            <ul class="page-footer__adress-list">
-              <li class="page-footer__adress-item">
-                <a href="" class="page-footer__adress-link"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="page-footer__container--flex">
+          <div class="page-footer__container-logo">
+            <a href="/" class="logo-link page-footer__logo-link"
+              >Web<span class="page-footer__logo-text">Studio</span></a
+            >
+            <address class="page-footer__adress">
+              <ul class="page-footer__adress-list">
+                <li class="page-footer__adress-item">
+                  <a href="" class="page-footer__adress-link"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="page-footer__adress-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="page-footer__mail-tel"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="page-footer__adress-item">
+                  <a href="tel:+380991111111" class="page-footer__mail-tel"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="page-footer__container-icon">
+            <p>присоединяйтесь</p>
+            <ul class="page-footer__icon-list">
+              <li class="page-footer__icon-item">
+                <a href="/" class="page-footer__icon-link">
+                  <svg class="page-footer__icon">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="page-footer__adress-item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="page-footer__mail-tel"
-                  >info@devstudio.com</a
-                >
+              <li class="page-footer__icon-item">
+                <a href="/" class="page-footer__icon-link">
+                  <svg class="page-footer__icon">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="page-footer__adress-item">
-                <a href="tel:+380991111111" class="page-footer__mail-tel"
-                  >+38 099 111 11 11</a
-                >
+              <li class="page-footer__icon-item">
+                <a href="/" class="page-footer__icon-link">
+                  <svg class="page-footer__icon">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-footer__icon-item">
+                <a href="/" class="page-footer__icon-link">
+                  <svg class="page-footer__icon">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="page-footer__container-icon">
-          <p>присоединяйтесь</p>
-          <ul class="page-footer__icon-list">
-            <li class="page-footer__icon-item">
-              <a href="/" class="page-footer__icon-link">
-                <svg class="page-footer__icon">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="page-footer__icon-item">
-              <a href="/" class="page-footer__icon-link">
-                <svg class="page-footer__icon">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="page-footer__icon-item">
-              <a href="/" class="page-footer__icon-link">
-                <svg class="page-footer__icon">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="page-footer__icon-item">
-              <a href="/" class="page-footer__icon-link">
-                <svg class="page-footer__icon">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div
@@ -879,7 +881,6 @@
           <p>подпишитесь на рассылку</p>
           <div class="page-footer__subscribe-container">
             <form class="page-footer__form" action="">
-              <!-- <label for="subscribe">E-mail</label> -->
               <input
                 class="page-footer__input"
                 type="text"
@@ -892,7 +893,7 @@
                 class="button primary page-footer__subscribe-btn"
               >
                 Подписаться
-                <svg class="modal-icon page-footer__subscribe-icon">
+                <svg class="page-footer__subscribe-icon">
                   <use href="./images/sprite.svg#icon-icon-send"></use>
                 </svg>
               </button>
