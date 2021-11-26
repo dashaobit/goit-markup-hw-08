@@ -678,7 +678,7 @@ img {
   width: calc((100% - 3 * 20px - 2 * 40px) / 4);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 380px) {
   .mobile-social {
     flex-wrap: wrap;
   }
@@ -701,7 +701,7 @@ img {
   padding-left: 10px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 380px) {
   .mobile-social__item:not(:first-child) {
     padding-left: 0;
   }
