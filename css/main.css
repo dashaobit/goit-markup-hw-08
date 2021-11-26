@@ -417,6 +417,13 @@ img {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 480px) {
+  .page-header__container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 .page-header__nav {
   display: flex;
   align-items: center;
