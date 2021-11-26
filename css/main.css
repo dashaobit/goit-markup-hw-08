@@ -566,7 +566,7 @@ img {
     content: '';
     width: 100%;
     height: 4px;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     background-color: var(--primary-background-color);
     border-radius: 2px;
@@ -630,6 +630,11 @@ img {
 .mobile-menu__close-btn-icon {
   width: 40px;
   height: 40px;
+  fill: #212121 transition fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__close-btn-icon:hover {
+  fill: var(--acсent-text-color);
 }
 
 .mobile-site-nav__link {
@@ -694,6 +699,12 @@ img {
 
 .mobile-social__item:not(:first-child) {
   padding-left: 10px;
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-social__item:not(:first-child) {
+    padding-left: 0;
+  }
 }
 
 .hero {
