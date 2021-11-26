@@ -215,10 +215,10 @@ img {
   left: 50%;
   padding: 40px;
   width: 100vw;
-  height: 100vh;
   background-color: var(--white-text-color);
   transform: translate(-50%, -50%) scale(1);
   transition: transorm 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: auto;
 }
 
 .backdrop.is-hidden .backdrop__box {
@@ -229,25 +229,19 @@ img {
 @media screen and (min-width: 450px) {
   .backdrop__box {
     width: 0;
-    height: 0;
     min-width: 450px;
-    min-height: 609px;
-    top: calc(50% + 50px);
   }
 }
 
 @media screen and (min-width: 676px) {
   .backdrop__box {
     max-width: 450px;
-    max-height: 609px;
-    top: calc(50% + 145px);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .backdrop__box {
     min-width: 528px;
-    height: 581px;
   }
 }
 
