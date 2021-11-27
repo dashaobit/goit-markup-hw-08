@@ -410,8 +410,6 @@ img {
 }
 
 .page-header {
-  top: 0;
-  left: 0;
   background-color: var(--white-text-color);
   border-bottom: 1px solid #ececec;
 }
@@ -481,8 +479,7 @@ img {
 
 @media (min-width: 768px) {
   .contact-nav {
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
 }
 
@@ -782,28 +779,16 @@ img {
   }
 }
 
-.feature {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 @media screen and (min-width: 768px) {
   .feature {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
     margin: -15px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .feature {
-    margin: 0;
-  }
-}
-
 .feature__item {
-  width: calc(100%);
+  width: 100%;
   margin-bottom: 30px;
   /* .feature-item::before {
   display: block;
@@ -838,16 +823,14 @@ img {
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
+  .feature__item:last-child {
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .feature__item {
-    width: calc((100% - 90px) / 4);
-    margin: 0;
-    margin-right: 30px;
-  }
-  .feature__item:last-child {
-    margin-right: 0;
+    width: calc((100% - 120px) / 4);
   }
 }
 
@@ -931,14 +914,9 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
   background-color: var(--secondary-background-color);
 }
 
-.team {
-  display: flex;
-  flex-direction: column;
-}
-
 @media screen and (min-width: 768px) {
   .team {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -954,7 +932,6 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
 @media screen and (min-width: 768px) {
   .team__item {
     margin-right: 30px;
-    margin-bottom: 30px;
   }
   .team__item:nth-child(2n) {
     margin-right: 0;
@@ -988,6 +965,7 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
 
 .team__list-title {
   margin-bottom: 10px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
@@ -1253,7 +1231,6 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: inherit;
-  margin-top: 20px;
   margin-bottom: 20px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1272,7 +1249,13 @@ transform: translate (-50%, -50%) – это % СВОЕЙ ширины (шири
 @media screen and (min-width: 1200px) {
   .page-footer__input {
     width: 358px;
+    margin-bottom: 0;
   }
+}
+
+.page-footer__subscribe-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .page-footer__subscribe-btn {

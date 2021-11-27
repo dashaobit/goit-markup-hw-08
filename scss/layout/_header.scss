@@ -2,8 +2,8 @@
   // position: fixed;
   // z-index: 1;
   // width: 100%;
-  top: 0;
-  left: 0;
+  // top: 0;
+  // left: 0;
   background-color: var(--white-text-color);
   border-bottom: 1px solid #ececec;
 }
@@ -63,8 +63,7 @@
   display: none;
 
   @media (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
+  display: block;
   }
   @media (min-width: 1199px) {
     display: flex;
